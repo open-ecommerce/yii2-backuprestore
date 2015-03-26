@@ -1,0 +1,21 @@
+{
+    "name": "open-ecommerce/yii2-backuprestore",
+    "description": "Database Backup and Restore functionality",
+    "type": "yii2-extension",
+    "keywords": ["yii2","Database", "Backup","Restore"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "open-ecommerce.org",
+            "email": "info@open-ecommerce.org"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "open-ecommerce\\modules\\backup\\": ""
+        }
+    }
+}
