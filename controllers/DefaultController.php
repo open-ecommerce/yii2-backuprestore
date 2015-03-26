@@ -1,10 +1,10 @@
 <?php
 
-namespace spanjeta\modules\backup\controllers;
+namespace oe\backuprestore\controllers;
 
 use Yii;
 use yii\web\Controller;
-use spanjeta\modules\backup\models\UploadForm;
+use oe\modules\backup\models\UploadForm;
 use yii\data\ArrayDataProvider;
 use yii\web\HttpException;
 use yii\web\NotFoundHttpException;

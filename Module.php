@@ -1,10 +1,10 @@
 <?php
 
-namespace open-ecommerce\modules\backup;
+namespace oe\modules\backuprestore;
 
 class Module extends \yii\base\Module
 {
-   public $controllerNamespace = 'open-ecommerce\modules\backup\controllers';
+   public $controllerNamespace = 'oe\modules\backup\controllers';
 
     public function init()
     {

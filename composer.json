@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "open-ecommerce\\modules\\backup\\": ""
+            "oe\\backuprestore\\": ""
         }
     }
 }

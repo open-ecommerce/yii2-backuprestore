@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist open-ecommerce/yii2-backuprestore "master-dev"
+php composer.phar require --prefer-dist open-ecommerce/yii2-backuprestore "*"
 ```
 
 or add
 
 ```
-"open-ecommerce/yii2-backuprestore": "master-dev"
+"open-ecommerce/yii2-backuprestore": "*"
 ```
 
 to the require section of your `composer.json` file.

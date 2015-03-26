@@ -1,6 +1,6 @@
 <?php
 
-namespace spanjeta\modules\backup\models;
+namespace oe\modules\backup\models;
 
 use yii\base\Model;
 
