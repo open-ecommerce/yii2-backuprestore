@@ -1,10 +1,9 @@
 <?php
-
-namespace oe\backuprestore\controllers;
+namespace oe\modules\backuprestore\controllers;
 
 use Yii;
 use yii\web\Controller;
-use oe\modules\backup\models\UploadForm;
+use oe\modules\backuprestore\models\UploadForm;
 use yii\data\ArrayDataProvider;
 use yii\web\HttpException;
 use yii\web\NotFoundHttpException;

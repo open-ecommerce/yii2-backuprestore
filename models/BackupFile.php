@@ -1,6 +1,6 @@
 <?php
 
-namespace oe\modules\backup\models;
+namespace oe\modules\backuprestore\models;
 
 use yii\base\Model;
 
