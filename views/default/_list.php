@@ -9,6 +9,7 @@ use yii\helpers\Url;
 
 echo GridView::widget([
     'id' => 'install-grid',
+    'export' => false,
     'dataProvider' => $dataProvider,
     'resizableColumns' => false,
     'showPageSummary' => false,

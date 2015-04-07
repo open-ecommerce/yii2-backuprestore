@@ -1,7 +1,9 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\widgets\FileInput;
+//use kartik\widgets\FileInput;
+use kartik\file\FileInput;
+
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Document */
