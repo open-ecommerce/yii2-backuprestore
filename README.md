@@ -5,6 +5,15 @@ Database Backup and Restore functionality
 Installation
 ------------
 
+Requirements
+http://demos.krajee.com/grid
+
+I am usin some Kartik extensions that you will need to install and configure in order to work:
+php composer.phar require kartik-v/yii2-grid "*"
+php composer.phar require kartik-v/yii2-widget-fileinput "*"
+
+
+
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
