@@ -52,7 +52,7 @@ Advanced ```[backend|frontend|common]/config/main.php```
 
 make sure you create a writable directory named _backup on app root directory.
 
-Pretty Url's ```/backup```
+Pretty Url's ```/backuprestore```
 
-No pretty Url's ```index.php?r=backup```
+No pretty Url's ```index.php?r=backuprestore```
 
