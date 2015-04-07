@@ -1,7 +1,6 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use kartik\widgets\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Document */
@@ -18,11 +17,7 @@ $this->params['breadcrumbs'][]= [
 
 <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
-
-<?= $form->field($model, 'upload_file')->widget(FileInput::classname(), [
-    'options' => ['accept' => 'mysql/*.sql'],
-]); ?>
-
+<?= $form->field($model, 'upload_file')->fileInput() ?>
 
 <div class="form-group">
     <?=

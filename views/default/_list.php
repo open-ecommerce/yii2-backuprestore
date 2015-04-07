@@ -10,6 +10,24 @@ use yii\helpers\Url;
 echo GridView::widget([
     'id' => 'install-grid',
     'dataProvider' => $dataProvider,
+    'resizableColumns' => false,
+    'showPageSummary' => false,
+    'headerRowOptions' => ['class' => 'kartik-sheet-style'],
+    'filterRowOptions' => ['class' => 'kartik-sheet-style'],
+    'responsive' => true,
+    'hover' => true,
+    'panel' => [
+        'heading' => '<h3 class="panel-title"> Database backup files</h3>',
+        'type' => 'primary',
+        'showFooter' => false
+    ],
+    // set your toolbar
+    'toolbar' => [
+        ['content' =>
+            Html::a('<i class="glyphicon glyphicon-plus"></i>  Create Backup', ['create'], ['class' => 'btn btn-success create-backup']). ' '.
+            Html::a('<i class="glyphicon glyphicon-plus"></i>  Upload Backup File', ['upload'], ['class' => 'btn btn-success']),
+        ],
+    ],
     'columns' => array(
         'name',
         'size:size',
@@ -28,7 +46,7 @@ echo GridView::widget([
                     ],
                     'urlCreator' => function ($action, $model, $key, $index) {
                 if ($action === 'restore_action') {
-                    $url = Yii::$app->urlManager->createUrl(array('backup/default/restore', ['filename' => $model['name']]));
+                    $url = Yii::$app->urlManager->createUrl(array('backuprestore/default/restore', ['filename' => $model['name']]));
                     return $url;
                 }
             }
@@ -46,7 +64,7 @@ echo GridView::widget([
                     ],
                     'urlCreator' => function ($action, $model, $key, $index) {
                 if ($action === 'delete_action') {
-                    $url = Yii::$app->urlManager->createUrl(array('backup/default/delete', ['filename' => $model['name']]));
+                    $url = Yii::$app->urlManager->createUrl(array('backuprestore/default/delete', ['filename' => $model['name']]));
                     return $url;
                 }
             }

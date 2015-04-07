@@ -176,6 +176,7 @@ class DefaultController extends Controller {
         $flashMsg = 'The file was created !!!';
 
         \Yii::$app->getSession()->setFlash($flashError, $flashMsg);
+        
         $this->redirect(array('index'));
     }
 
