@@ -9,8 +9,9 @@ I converted to yii2 and made it more intuitive using the Kartik extensions.
 
 Demo
 -----
-
+Simple demo to see the screens and a proof of concept
 http://yii2.oe-lab.tk/
+
 
 
 Installation
