@@ -32,10 +32,9 @@ Basic ```config/web.php```
 Advanced ```[backend|frontend|common]/config/main.php```
 
 >
-        'modules'    => [
-            'backup' => [
-                'class' => 'open-ecommerce\modules\backup\Module',
-            ],
+        'backuprestore' => [
+            'class' => '\oe\modules\backuprestore\Module',
+            'layout' => '@admin-views/layouts/main', //or what ever layout you use
             ...
             ...
         ],
