@@ -2,16 +2,18 @@ Yii2 Backup and Restore Database
 ===================
 Database Backup and Restore functionality
 
+This extension is base in:
+https://github.com/spanjeta/yii2-backup and other yii1 similar backup-restore extensions 
+I converted to yii2 and made it more intuitive using the Kartik extensions.
+
+
 Installation
 ------------
 
 Requirements
-http://demos.krajee.com/grid
-
 I am usin some Kartik extensions that you will need to install and configure in order to work:
 php composer.phar require kartik-v/yii2-grid "*"
 php composer.phar require kartik-v/yii2-widget-fileinput "*"
-
 
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -43,16 +45,14 @@ Advanced ```[backend|frontend|common]/config/main.php```
 >
         'backuprestore' => [
             'class' => '\oe\modules\backuprestore\Module',
-            'layout' => '@admin-views/layouts/main', //or what ever layout you use
+            //'layout' => '@admin-views/layouts/main', or what ever layout you use
             ...
             ...
         ],
 
 make sure you create a writable directory named _backup on app root directory.
 
-Usage
------
-
 Pretty Url's ```/backup```
 
 No pretty Url's ```index.php?r=backup```
+
