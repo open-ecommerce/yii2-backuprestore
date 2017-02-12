@@ -176,7 +176,7 @@ class DefaultController extends Controller {
         $flashMsg = 'The file was created !!!';
 
         \Yii::$app->getSession()->setFlash($flashError, $flashMsg);
-        
+
         $this->redirect(array('index'));
     }
 
@@ -300,7 +300,7 @@ class DefaultController extends Controller {
         $flashError = '';
         $flashMsg = '';
 
-        $file = $_GET[0]['filename'];
+        $file = $_GET['filename'];
 
         $this->updateMenuItems();
         $sqlFile = $this->path . basename($file);

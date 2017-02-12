@@ -47,7 +47,7 @@ echo GridView::widget([
                     ],
                     'urlCreator' => function ($action, $model, $key, $index) {
                 if ($action === 'restore_action') {
-                    $url = Yii::$app->urlManager->createUrl(array('backuprestore/default/restore', ['filename' => $model['name']]));
+                    $url = Yii::$app->urlManager->createUrl(['backuprestore/default/restore', 'filename' => $model['name']]);
                     return $url;
                 }
             }
@@ -69,7 +69,7 @@ echo GridView::widget([
                     return $url;
                 }
             }
-                ],        
+                ],
     ),
 ]);
 ?>
